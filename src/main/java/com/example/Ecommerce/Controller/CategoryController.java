@@ -2,6 +2,7 @@ package com.example.Ecommerce.Controller;
 
 import com.example.Ecommerce.Model.Category;
 import com.example.Ecommerce.service.CategoryService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,9 +28,9 @@ public class CategoryController {
         return new ResponseEntity<>(categories,HttpStatus.OK);
     }
 
-//    @PostMapping("/api/public/categories")
-    @RequestMapping(value="/public/categories",method = RequestMethod.POST)
-    public ResponseEntity<String> createCategory(@RequestBody Category category){
+//    @RequestMapping(value="/public/categories",method = RequestMethod.POST)
+    @PostMapping("/public/categories")
+    public ResponseEntity<String> createCategory(@Valid @RequestBody Category category){
         categoryService.createCategory(category);
         return new ResponseEntity<>("Category added successfully",HttpStatus.CREATED);
     }
