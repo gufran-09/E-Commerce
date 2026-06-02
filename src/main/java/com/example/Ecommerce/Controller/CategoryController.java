@@ -20,7 +20,6 @@ public class CategoryController {
     public CategoryService categoryService;
 
     public CategoryController(CategoryService categoryService){
-
         this.categoryService=categoryService;
     }
 //    @GetMapping("/echo")
