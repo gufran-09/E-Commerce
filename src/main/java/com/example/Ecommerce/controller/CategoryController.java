@@ -1,6 +1,5 @@
-package com.example.Ecommerce.Controller;
+package com.example.Ecommerce.controller;
 
-import com.example.Ecommerce.Model.Category;
 import com.example.Ecommerce.config.AppConstants;
 import com.example.Ecommerce.payload.CategoryDTO;
 import com.example.Ecommerce.payload.CategoryResponse;
@@ -9,9 +8,6 @@ import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
-
-import java.util.*;
 
 @RestController
 @RequestMapping("/api")
