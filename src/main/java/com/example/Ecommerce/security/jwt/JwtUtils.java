@@ -1,4 +1,4 @@
-package com.example.securitydemo.jwt;
+package com.example.Ecommerce.security.jwt;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;

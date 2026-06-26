@@ -1,4 +1,4 @@
-package com.example.securitydemo.jwt;
+package com.example.Ecommerce.security.jwt;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
